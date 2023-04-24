@@ -1,6 +1,9 @@
 const { Client, GatewayIntentBits, Partials } = require('discord.js');
 require('dotenv').config();
 
+const app = express();
+
+
 
 const poe = require('./poe-client');
 
@@ -197,3 +200,6 @@ client.on('messageCreate', async function(msg) {
 
 client.login(process.env.TOKEN)
 
+app.listen(8999, () => {
+
+})
